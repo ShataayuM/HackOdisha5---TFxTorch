@@ -5,7 +5,7 @@
 
 **Ethical Lens is an AI-powered, dual-purpose tool designed to combat modern misinformation. It verifies news headlines against credible sources and detects sophisticated deepfake images, all through a clean and simple interface.**
 
-This project was built in under 36 hours for the **[Hack Odisha 5](https://hackodisha.tech/)** hackathon.
+This project was built in under 36 hours for the **[Hack Odisha 5](https://hackodisha-4.devfolio.co/overview)** hackathon.
 
 ---
 
