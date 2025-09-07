@@ -49,7 +49,7 @@ export const Container = styled.div`
   position: relative;
   z-index: 1;
 
-  /* This is the edited part to fix the scrolling issue */
+  
   ${props => props.$isResultVisible && `
     min-height: 100vh;
     padding-bottom: 50px;
@@ -116,7 +116,7 @@ const StyledButton = styled.button`
   font-size: 1.2em;
   font-weight: bold;
   color: white;
-  background-color: #007bff;
+  background-color: #4000ff;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -140,12 +140,29 @@ export const Button = styled(StyledButton)`
   margin-top: 1rem;
 `;
 
+// Added a new styled component for the button container to control spacing
+export const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  width: 100%;
+`;
+
 // Refactored FileInputLabel to extend the new styled component
 export const FileInputLabel = styled(StyledButton).attrs({ as: 'label' })`
+  width: 50%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  background-color: #F0EAD6;
+  color: #000;
+  border-radius: 12px;
+  &:hover {
+    background-color: #c0c0c0;
+    box-shadow: 0 0 15px rgba(211, 211, 211, 0.8);
+  }
 `;
 
 export const HiddenFileInput = styled.input`

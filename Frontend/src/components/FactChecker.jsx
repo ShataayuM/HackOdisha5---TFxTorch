@@ -194,6 +194,17 @@ const FactChecker = () => {
   const isTextResult = result && (result.verdict === 'VERIFIED' || result.verdict === 'MISINFORMATION');
   const isImageResult = result && (result.verdict === 'DEEPFAKE' || result.verdict === 'AUTHENTIC');
 
+  const getSubtitle = () => {
+    switch (selectedOption) {
+      case 'text':
+        return "Analyze News Headlines and verify if  \"Fake\"";
+      case 'image':
+        return "Analyze deepfake images and verify if  \"Fake\"";
+      default:
+        return "Analyze headlines or deepfake images.";
+    }
+  };
+
   const renderForm = () => {
     if (selectedOption === 'text') {
       return (
@@ -222,7 +233,7 @@ const FactChecker = () => {
             value={pageSize}
             onChange={(e) => setPageSize(e.target.value)}
           />
-          <Button onClick={handleSubmit}>Analyze News</Button>
+          <Button onClick={handleSubmit}>Analyze Headline</Button>
         </InputGroup>
       );
     } else if (selectedOption === 'image') {
@@ -235,9 +246,9 @@ const FactChecker = () => {
             onChange={handleFileChange}
           />
           <FileInputLabel htmlFor="imageUpload">
-            {imageFile ? imageFile.name : 'Upload an Image'}
+            {imageFile ? imageFile.name : 'Upload Image'}
           </FileInputLabel>
-          <Button onClick={handleSubmit}>Analyze Image</Button>
+          <Button onClick={handleSubmit}>Verify Deepfake Cases</Button>
         </InputGroup>
       );
     } else {
@@ -254,8 +265,8 @@ const FactChecker = () => {
     <Background>
       <Container>
         <Title>Ethical Lens</Title>
-        <Subtitle>Analyze headlines or deepfake images.</Subtitle>
-        
+        <Subtitle>{getSubtitle()}</Subtitle>
+
         {!loading && !result && !error ? (
           renderForm()
         ) : loading ? (
