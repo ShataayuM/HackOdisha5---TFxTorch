@@ -140,7 +140,7 @@ This project uses a **Siamese Network architecture**, which is ideal for similar
        print(f"Checking: '{headline_to_check}'\nResult: {result}")
    else:
        print("Please replace 'YOUR_NEWS_API_KEY' to run the example.")
-```
+   ```
    
 
 
