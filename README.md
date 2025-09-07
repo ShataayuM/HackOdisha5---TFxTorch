@@ -72,6 +72,27 @@ The application is a full-stack solution with a clear division between the user 
 
 To run this project on your own machine, follow these steps.
 
+
+├── Backend
+│   ├── MobileNetV2_CNN_Model
+│   │   ├── Deepfake_Detection_new.pth      # The trained PyTorch model weights
+│   │   └── README.md
+│   └── Siamese-Transformer-based NLP model
+│       ├── siamese_model.weights(2).h5     # The trained Keras model weights
+│       ├── siamese_model_architecture(2).json
+│       ├── siamese_model_full(2).keras
+│       └── README.md
+├── Frontend
+│   ├── public
+│   └── src
+│       ├── App.jsx                         # Main React component
+│       └── index.css
+├── .gitignore
+├── APICONTRACT.md                          # Defines the request/response structure
+└── README.md                               # You are here!
+
+
+
 ### Prerequisites
 
 * Python 3.8+
