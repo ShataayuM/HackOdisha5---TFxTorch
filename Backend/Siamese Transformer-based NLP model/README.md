@@ -41,29 +41,6 @@ This project uses a **Siamese Network architecture**, which is ideal for similar
 
 ---
 
-## 📑 Model Summary
-
-| Layer (type)              | Output Shape     | Param # | Connected to |
-|----------------------------|------------------|---------|--------------|
-| **input_ids_1 (InputLayer)** | (None, None)   | 0       | [] |
-| **input_ids_2 (InputLayer)** | (None, None)   | 0       | [] |
-| **attention_mask_1 (InputLayer)** | (None, None) | 0   | [] |
-| **attention_mask_2 (InputLayer)** | (None, None) | 0   | [] |
-| **encode_inputs_layer (EncodeInputsLayer)** | multiple | 0 | ['input_ids_1[0][0]', 'attention_mask_1[0][0]', 'input_ids_2[0][0]', 'attention_mask_2[0][0]'] |
-| **lambda_1 (Lambda)**     | (None, 1)        | 0       | ['encode_inputs_layer[0][2]'] |
-| **dot_1 (Dot)**           | (None, 1)        | 0       | ['lambda_1[0][0]'] |
-| **concatenate_1 (Concatenate)** | (None, 3)   | 0       | ['lambda_1[0][0]', 'dot_1[0][0]'] |
-| **dense_3 (Dense)**       | (None, 32)       | 128     | ['concatenate_1[0][0]'] |
-| **dropout_1 (Dropout)**   | (None, 32)       | 0       | ['dense_3[0][0]'] |
-| **dense_4 (Dense)**       | (None, 16)       | 528     | ['dropout_1[0][0]'] |
-| **dense_5 (Dense)**       | (None, 1)        | 17      | ['dense_4[0][0]'] |
-
-**Total params:** 213,221  
-**Trainable params:** 213,221  
-**Non-trainable params:** 0  
-
----
-
 ## 📚 Dataset: GLUE STS-B
 
 - **Content:** Sentence pairs from news headlines, captions, and forums.  
