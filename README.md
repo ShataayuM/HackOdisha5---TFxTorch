@@ -25,7 +25,7 @@ The application is a full-stack solution with a clear division between the user 
 2.  **Backend (API):** A FastAPI server receives the request. Based on the `type` of the request (`text` or `image`), it routes the data to the appropriate machine learning model.
 3.  **AI Core - The Models:**
     * **NLP Model:** For text, the **[Siamese Transformer](./Backend/Siamese-Transformer-based%20NLP%20model/)** encodes the user's headline and a batch of recent, real headlines. It then uses **cosine similarity** to find the closest match, providing verification and a source link.
-    * **CV Model:** For images, the uploaded file is processed and fed into our **[MobileNetV2 CNN Model](./Backend/MobileNetV2_CNN_Model/)** which classifies it as either "Real" or "Deepfake".
+    * **CNN Model:** For images, the uploaded file is processed and fed into our **[MobileNetV2 CNN Model](./Backend/MobileNetV2_CNN_Model/)** which classifies it as either "Real" or "Deepfake".
 4.  **Response:** The backend formats the model's output into a clean JSON response, which the frontend then displays to the user in a human-readable format.
 
 ---
