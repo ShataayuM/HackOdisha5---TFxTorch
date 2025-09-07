@@ -1,9 +1,9 @@
 # HackOdisha5---TFxTorch
-# 🛡️ Veritas: The AI Fact-Checker for Hack Odisha 5
+# 🛡️ Ethical Lens: The AI Fact-Checker for Hack Odisha 5
 
 ![Veritas Banner](https://user-images.githubusercontent.com/83236029/210137746-12f5509e-7140-4560-a292-6d2a71e89e4c.png)
 
-**Veritas is an AI-powered, dual-purpose tool designed to combat modern misinformation. It verifies news headlines against credible sources and detects sophisticated deepfake images, all through a clean and simple interface.**
+**Ethical Lens is an AI-powered, dual-purpose tool designed to combat modern misinformation. It verifies news headlines against credible sources and detects sophisticated deepfake images, all through a clean and simple interface.**
 
 This project was built in under 36 hours for the **[Hack Odisha 5](https://hackodisha.tech/)** hackathon.
 
