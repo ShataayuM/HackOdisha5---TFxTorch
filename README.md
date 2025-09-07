@@ -38,7 +38,7 @@ The application is a full-stack solution with a clear division between the user 
 | **Backend** | [Python](https://www.python.org/), [FastAPI](https://fastapi.tiangolo.com/)                                                                                                                             |
 | **AI Models** | **Image:** [PyTorch](https://pytorch.org/), MobileNetV2 <br> **Text:** [TensorFlow/Keras](https://www.tensorflow.org/), Siamese Networks, Sentence Transformers                                              |
 | **APIs** | [NewsAPI](https://newsapi.org/) for real-time news data                                                                                                                                                |
-| **Deployment**| [Hugging Face Spaces](https://huggingface.co/spaces)                                                                                                                                                   |
+| **Deployment**| [Hugging Face Face Scan model](https://huggingface.co/spaces)   ,   [StreamLit NLP model](https://siamese-transformer-based-nlp-model-zejz55gvj8datbgloyxv2a.streamlit.app/)                                                                                                                                              |
 
 ---
 └── README.md                               # You are here!
