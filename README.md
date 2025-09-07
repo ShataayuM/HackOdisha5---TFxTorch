@@ -84,6 +84,4 @@ Here is a map of our repository, with links to key directories and files.
 * A NewsAPI Key (get one for free at [newsapi.org](https://newsapi.org/))
 
 
-## 📂 Repository Structure
-
-Here is a map of our repository, with links to key directories and files.
+The deployed model link for deepfake images-https://huggingface.co/spaces/rxhxss/DeepFake_Detection
