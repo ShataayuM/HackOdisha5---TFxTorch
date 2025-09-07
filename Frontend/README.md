@@ -42,4 +42,87 @@ cd [https://github.com/ShataayuM/HackOdisha5---TFxTorch.git]/frontend
 npm install
 
 # Run the application
-npm start
+npm run dev
+```
+
+The app will be available at:
+👉 http://localhost:3000
+ (or another port if 3000 is occupied)
+---
+
+## 🔌 API Integration
+
+The frontend communicates with the backend API at:
+http://localhost:8000/analyze
+
+
+It sends a `POST` request with a JSON payload containing the **analysis type** (`text` or `image`) and the corresponding data.
+
+---
+
+### 📄 Example Payloads
+
+#### Text Analysis
+```json
+{
+  "type": "text",
+  "data": "Politician Announces Four-Day Weekend for All Workers",
+  "metadata": {
+    "language": "en",
+    "country": "us",
+    "category": "technology",
+    "pageSize": "5"
+  }
+}
+{
+  "type": "image",
+  "data": "data:image/png;base64,...",
+  "metadata": {
+    "language": "en"
+  }
+}
+```
+---
+
+## 🧪 Dummy Data for Development
+
+The app includes **hard-coded dummy responses** so you can test without a running backend.  
+
+Trigger these by entering the following text values or uploading image files with matching names:
+
+### 🔤 Text Inputs
+
+| Input Value            | Result Type       |
+|-------------------------|------------------|
+| `dummy-verified`        | ✅ Verified       |
+| `dummy-misinformation`  | ❌ Misinformation |
+
+### 🖼️ Image File Names (case-insensitive)
+
+| File Name Contains      | Result Type   |
+|--------------------------|---------------|
+| `dummy-authentic`        | 🟢 Authentic  |
+| `dummy-deepfake`         | 🔴 Deepfake   |
+
+---
+
+### 💡 Example Usage
+
+#### Text Example
+```json
+{
+  "type": "text",
+  "data": "dummy-verified",
+  "metadata": { "language": "en" }
+}
+```
+#### Image Example
+
+Upload an image named:
+```
+dummy-deepfake.png
+```
+and the app will return a sample Deepfake result.
+
+
+
