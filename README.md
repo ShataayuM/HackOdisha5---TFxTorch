@@ -50,7 +50,7 @@ The application is a full-stack solution with a clear division between the user 
 
 ## 🎗️ **Deployments:**
 
-1. [Hugging Deepfake Detection model](https://huggingface.co/spaces/rxhxss/DeepFake_Detection)
+1. [Hugging Face Deepfake Detection model](https://huggingface.co/spaces/rxhxss/DeepFake_Detection)
 
 2. [StreamLit NLP model with News Api integration](https://siamese-transformer-based-nlp-model-zejz55gvj8datbgloyxv2a.streamlit.app/) 
 
