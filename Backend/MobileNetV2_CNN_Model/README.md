@@ -4,9 +4,8 @@
 A lightweight and efficient deep learning model built to classify images as either **real** or **deepfake**. This project leverages the MobileNetV2 architecture, fine-tuned on a specialized Kaggle dataset to achieve high accuracy in detecting manipulated images.
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)](https://www.tensorflow.org/)
-[![Keras](https://img.shields.io/badge/Keras-2.x-red.svg)](https://keras.io/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Pytorch 2.x](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)](https://pytorch.org/)
+
 
 ---
 
