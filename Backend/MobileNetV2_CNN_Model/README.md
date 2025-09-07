@@ -23,7 +23,7 @@ The solution is centered around **MobileNetV2**, a state-of-the-art convolutiona
 
 * **Pre-trained Base:** Utilizes weights pre-trained on the ImageNet dataset, leveraging transfer learning.
 * **Custom Head:** A custom classification layer (GlobalAveragePooling2D, Dropout, and a Dense layer with a Sigmoid activation) is added on top of the base model for the binary classification task.
-* **Fine-Tuning:** The entire model was fine-tuned to adapt its learned features specifically for deepfake detection.
+* **Fine-Tuning:** The entire model was fine-tuned to adapt its learned features specifically for deepfake detection. The last 3 blocks and the layers in it was unfreezed.
 
 ---
 
