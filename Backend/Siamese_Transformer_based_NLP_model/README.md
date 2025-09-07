@@ -72,6 +72,11 @@ This project uses a **Siamese Network architecture**, which is ideal for similar
 
 ---
 
+## Deployment Link:
+
+(Click Here)[https://siamese-transformer-based-nlp-model-zejz55gvj8datbgloyxv2a.streamlit.app/]
+
+
 ## 🚀 How to Use
 
 1. **Clone the repository:**
