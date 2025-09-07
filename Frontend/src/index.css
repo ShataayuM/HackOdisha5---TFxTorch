@@ -1,0 +1,13 @@
+/* This is the core fix to make the app fill the screen */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Optional: Add a smooth scroll for better UX */
+html {
+  scroll-behavior: smooth;
+}
