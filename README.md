@@ -29,7 +29,7 @@ The application is a full-stack solution with a clear division between the user 
 4.  **Response:** The backend formats the model's output into a clean JSON response, which the frontend then displays to the user in a human-readable format.
 
 ---
-
+                                                                                                                                            |
 ## 💻 Tech Stack
 
 | Area      | Technology                                                                                                                                                                                             |
@@ -38,11 +38,8 @@ The application is a full-stack solution with a clear division between the user 
 | **Backend** | [Python](https://www.python.org/), [FastAPI](https://fastapi.tiangolo.com/)                                                                                                                             |
 | **AI Models** | **Image:** [PyTorch](https://pytorch.org/), MobileNetV2 <br> **Text:** [TensorFlow/Keras](https://www.tensorflow.org/), Siamese Networks, Sentence Transformers                                              |
 | **APIs** | [NewsAPI](https://newsapi.org/) for real-time news data                                                                                                                                                |
-| **Deployment**| [Hugging Face](https://huggingface.co/spaces/rxhxss/DeepFake_Detection)   ,   [StreamLit](https://streamlit.io/)                                                                                                                                              |
 
 ---
-└── README.md                               # You are here!
-
 
 **Quick Access Links:**
 * [**Backend Code**](./Backend/)
@@ -50,6 +47,12 @@ The application is a full-stack solution with a clear division between the user 
 * [**API Contract**](./APICONTRACT.md)
 
 ---
+
+## 🎗️ **Deployments:**
+
+1. [Hugging Face Face Scan model](https://huggingface.co/spaces/rxhxss/DeepFake_Detection)
+
+2. [StreamLit NLP model](https://siamese-transformer-based-nlp-model-zejz55gvj8datbgloyxv2a.streamlit.app/) 
 
 
 ## 📂 Repository Structure
