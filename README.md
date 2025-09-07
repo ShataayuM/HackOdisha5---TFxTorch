@@ -29,7 +29,7 @@ The application is a full-stack solution with a clear division between the user 
 4.  **Response:** The backend formats the model's output into a clean JSON response, which the frontend then displays to the user in a human-readable format.
 
 ---
-                                                                                                                                            |
+                                                                                                                                          
 ## 💻 Tech Stack
 
 | Area      | Technology                                                                                                                                                                                             |
