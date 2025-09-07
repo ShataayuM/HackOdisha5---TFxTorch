@@ -1,7 +1,7 @@
 # HackOdisha5---TFxTorch
 # 🛡️ Ethical Lens: The AI Fact-Checker for Hack Odisha 5
 
-![Veritas Banner](https://user-images.githubusercontent.com/83236029/210137746-12f5509e-7140-4560-a292-6d2a71e89e4c.png)
+
 
 **Ethical Lens is an AI-powered, dual-purpose tool designed to combat modern misinformation. It verifies news headlines against credible sources and detects sophisticated deepfake images, all through a clean and simple interface.**
 
@@ -51,11 +51,11 @@ The application is a full-stack solution with a clear division between the user 
 
 ---
 
-## 🚀 Getting Started Locally
 
-To run this project on your own machine, follow these steps.
+## 📂 Repository Structure
 
-
+Here is a map of our repository, with links to key directories and files.
+```
 ├── Backend
 │   ├── MobileNetV2_CNN_Model
 │   │   ├── Deepfake_Detection_new.pth      # The trained PyTorch model weights
@@ -75,11 +75,12 @@ To run this project on your own machine, follow these steps.
 └── README.md                               # You are here!
 
 
-
+```
 ### Prerequisites
 
 * Python 3.8+
 * Node.js v16+
+* Pytorch 2.x+
 * A NewsAPI Key (get one for free at [newsapi.org](https://newsapi.org/))
 
 
