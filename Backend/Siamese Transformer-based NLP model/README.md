@@ -17,14 +17,14 @@ The primary objective of this project is to create a robust NLP model that can:
 
 ## 🛠️ Tech Stack & Libraries
 
-| Technology               | Icon                                                                                                  | Description |
-|---------------------------|-------------------------------------------------------------------------------------------------------|-------------|
-| **Python**               | 🐍                                                                                                    | Core programming language. |
-| **TensorFlow / Keras**   | ![TensorFlow Logo](https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg)           | Deep learning framework used for building and training the model. |
-| **Hugging Face Transformers** | 🤗                                                                                             | For accessing the pre-trained DistilBERT model and tokenizer. |
-| **Hugging Face Datasets** | ![HF Logo](https://huggingface.co/front/assets/huggingface_logo-noborder.svg)                       | To efficiently load and preprocess the training data. |
-| **Google Colab**         | ![Colab](https://colab.research.google.com/img/colab_favicon_256px.png)                              | For GPU-accelerated model training. |
-| **NewsAPI.org**          | 📡                                                                                                    | To fetch real-time news articles for verification. |
+| Technology               | Description |
+|---------------------------|-------------|
+| **Python**               | Core programming language. |
+| **TensorFlow / Keras**   | Deep learning framework used for building and training the model. |
+| **Hugging Face Transformers** | For accessing the pre-trained DistilBERT model and tokenizer. |
+| **Hugging Face Datasets** | To efficiently load and preprocess the training data. |
+| **Google Colab**         | For GPU-accelerated model training. |
+| **NewsAPI.org**          | To fetch real-time news articles for verification. |
 
 ---
 
