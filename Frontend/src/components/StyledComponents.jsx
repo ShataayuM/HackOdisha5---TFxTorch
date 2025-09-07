@@ -49,6 +49,13 @@ export const Container = styled.div`
   position: relative;
   z-index: 1;
 
+  /* This is the edited part to fix the scrolling issue */
+  ${props => props.$isResultVisible && `
+    min-height: 100vh;
+    padding-bottom: 50px;
+    overflow-y: auto;
+  `}
+
   @media (max-width: 600px) {
     padding: 2rem 1.5rem;
   }
@@ -102,28 +109,8 @@ export const OrSeparator = styled.p`
   font-size: 0.9em;
 `;
 
-export const FileInputLabel = styled.label`
-  display: block;
-  width: 100%;
-  padding: 14px;
-  background-color: #007bff;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  font-weight: bold;
-  font-size: 1.1em;
-  &:hover {
-    background-color: #0056b3;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4);
-  }
-`;
-
-export const HiddenFileInput = styled.input`
-  display: none;
-`;
-
-export const Button = styled.button`
+// New base style for buttons
+const StyledButton = styled.button`
   width: 100%;
   padding: 16px 24px;
   font-size: 1.2em;
@@ -135,7 +122,6 @@ export const Button = styled.button`
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
-  margin-top: 2rem;
   
   &:hover {
     background-color: #0056b3;
@@ -147,6 +133,23 @@ export const Button = styled.button`
     cursor: not-allowed;
     box-shadow: none;
   }
+`;
+
+// Refactored Button to extend the new styled component
+export const Button = styled(StyledButton)`
+  margin-top: 1rem;
+`;
+
+// Refactored FileInputLabel to extend the new styled component
+export const FileInputLabel = styled(StyledButton).attrs({ as: 'label' })`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+`;
+
+export const HiddenFileInput = styled.input`
+  display: none;
 `;
 
 export const Spinner = styled.div`
